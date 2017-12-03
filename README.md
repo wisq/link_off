@@ -28,6 +28,7 @@ LinkOff was written in Elixir 1.5 running on Erlang 20.  You can try running it 
 
 1. Ensure dependencies are installed; see above.
 2. Run `mix deps.get` to fetch the libraries LinkOff needs.
+3. Edit `config/link_off.example.exs`, adjust as needed, and save as `config/link_off.exs`.
 
 Now, you have two options on how to run LinkOff:
 
@@ -35,7 +36,7 @@ Now, you have two options on how to run LinkOff:
 
 For beginners, I recommend just running `mix linkoff.server`.  This will launch the server right here and now, ready to accept requests.  (To exit the server, press control-C twice.)
 
-By default, it listens on localhost (`127.0.0.1`), port 3232.  If you want to open this up to the world, you'll need to edit your `config/link_off.exs` and set `bind_to_ip` to `0.0.0.0`.  (You may also have to set up port forwarding so the world can reach you.)
+By default, it listens on localhost (`127.0.0.1`), port 4242.  If you want to open this up to the world, you'll need to edit your `config/link_off.exs` and set `bind_to_ip` to `0.0.0.0`.  (You may also have to set up port forwarding so the world can reach you.)
 
 ### Deploying
 
