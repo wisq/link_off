@@ -2,5 +2,5 @@
 
 echo
 echo -n "=== Restarting: "
-bin/plextube restart
+bin/link_off restart
 echo "=== Done!"
