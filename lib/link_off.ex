@@ -31,7 +31,7 @@ defmodule LinkOff do
 
   defp web_options do
     ip   = Application.get_env(:link_off, :bind_to_ip, "127.0.0.1")
-    port = Application.get_env(:link_off, :bind_to_port, 3232)
+    port = Application.get_env(:link_off, :bind_to_port, 4242)
     Logger.info("LinkOff setting up on IP #{ip}, port #{port}.")
     [ip: ip_tuple(ip), port: port]
   end
