@@ -6,7 +6,7 @@ defmodule LinkOff.Mixfile do
       app: :link_off,
       version: "0.1.0",
       elixir: "~> 1.5",
-      start_permanent: Mix.env == :prod,
+      start_permanent: Mix.env() == :prod,
       deps: deps()
     ]
   end
@@ -26,10 +26,7 @@ defmodule LinkOff.Mixfile do
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"},
       {:cowboy, "~> 1.0.0"},
       {:plug, "~> 1.0"},
-
-      # Fix https://github.com/bitwalker/distillery/issues/321
-      {:distillery, git: "https://github.com/bitwalker/distillery.git",
-        ref: "4c154e013a27d9f82d8cff147309674eb41e3db4", runtime: false},
+      {:distillery, "~> 2.0", runtime: false}
     ]
   end
 end
